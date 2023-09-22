@@ -35,4 +35,4 @@ runs:
       env: 
         DOCKER_IMAGE: ${{ inputs.image }}
         MANIFEST_PATH: ${{ inputs.manifest_path }}
-        NAMESPACE: $ {{ inputs.namespace }}
+        NAMESPACE: ${{ inputs.namespace }}
