@@ -1,3 +1,3 @@
-grep -r "image:" . | awk -F ':' '{print $1}' | xargs -I {} yq -i '.spec.template.spec.containers[0].image = ${DOCKER_IMAGE}' {}
+grep -r "image:" . | awk -F ':' '{print $1}' | xargs -I {} yq -i '.spec.template.spec.containers[0].image = $DOCKER_IMAGE' {}
 
 kubectl apply -f $MANIFEST_PATH -n $NAMESPACE
