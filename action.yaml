@@ -22,9 +22,9 @@ runs:
       shell: bash
       run: sudo snap install yq
       
-    - run: action.sh
-
+    - name: Run script
       shell: bash
+      run: action.sh
       env: 
         DOCKER_IMAGE: ${{ inputs.image }}
         MANIFEST_PATH: ${{ inputs.manifest_path }}
