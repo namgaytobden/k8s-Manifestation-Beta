@@ -13,3 +13,5 @@ with:
   image: docker_repo:tag
   manifest_path: deployment/manifest/
 ```
+
+#**NOTE:** It modifies the manifest files. 
