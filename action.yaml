@@ -24,7 +24,7 @@ runs:
       
     - name: Run script
       shell: bash
-      run: action.sh
+      run: bash action.sh
       env: 
         DOCKER_IMAGE: ${{ inputs.image }}
         MANIFEST_PATH: ${{ inputs.manifest_path }}
