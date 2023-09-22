@@ -9,8 +9,7 @@ inputs:
   image:
     description: Docker Image name and tag
     required: true
-    default: latest
-
+    
   manifest_path:
     description: Manifest path
     required: true
