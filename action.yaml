@@ -18,8 +18,8 @@ inputs:
 runs:
   using: composite
   steps:
-      shell: bash
     - name: Install yq
+      shell: bash
       run: sudo snap install yq
      
       shell: bash
