@@ -21,8 +21,7 @@ runs:
     - name: Install yq
       shell: bash
       run: sudo snap install yq
-     
-      shell: bash
+      
     - run: action.sh
 
       shell: bash
