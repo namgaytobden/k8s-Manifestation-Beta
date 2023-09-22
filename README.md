@@ -1,5 +1,5 @@
 ```
-uses: namgaytobden/nt-git-action@main
+uses: namgaytobden/k8s-manifestation@main
 with:
   image: docker_repo:tag
   manifest_path: /deployment/.
