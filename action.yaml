@@ -15,14 +15,9 @@ inputs:
     description: Manifest path
     required: true
 
-  #namespace: 
-  #  description: namespace 
-  #  required: true
-
 runs:
   using: composite
   steps:
-    - run: echo "${{ github.action_path }}" >> $GITHUB_PATH
       shell: bash
     - name: Install yq
       run: sudo snap install yq
@@ -34,4 +29,3 @@ runs:
       env: 
         DOCKER_IMAGE: ${{ inputs.image }}
         MANIFEST_PATH: ${{ inputs.manifest_path }}
-        #NAMESPACE: ${{ inputs.namespace }}
