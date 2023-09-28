@@ -7,11 +7,12 @@ This is useful for automatically updating **image** references in your Kubernete
   - Docker Image Tag
   - k8s manifest/resource path
 
-```
+```yaml
 uses: namgaytobden/k8s-manifestation@main
 with:
   image: docker_repo:tag
   manifest_path: deployment/manifest/
 ```
 
-#**NOTE:** It modifies `Image` content in `spec.template.spec.containers[0].image` of any yaml file. 
+#**NOTE:** It modifies `Image` content in `spec.template.spec.containers[0].image` of any yaml file.
+
