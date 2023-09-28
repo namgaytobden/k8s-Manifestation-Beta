@@ -14,5 +14,5 @@ with:
   manifest_path: deployment/manifest/
 ```
 
-#**NOTE:** It modifies `Image` content in `spec.template.spec.containers[0].image` of any yaml file.
+#**NOTE:** It modifies `Image` content in `spec.template.spec.containers[0].image` of all yaml file specified in `maifest_path`.
 
