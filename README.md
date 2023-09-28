@@ -3,7 +3,7 @@ This action finds all **Kubernetes manifest** files containing **image** in thei
 
 This is useful for automatically updating **image** references in your Kubernetes configuration during deployment or CI/CD processes.
 
-- It takes in **2** inputs: 
+- It takes in **2** inputs: *(Required)*
   - Docker Image Tag
   - k8s manifest/resource path
 
@@ -14,4 +14,4 @@ with:
   manifest_path: deployment/manifest/
 ```
 
-#**NOTE:** It modifies the manifest files. 
+#**NOTE:** It modifies `Image` content in `spec.template.spec.containers[0].image` of any yaml file. 
