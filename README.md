@@ -8,7 +8,7 @@ This is useful for automatically updating **image** references in your Kubernete
   - k8s manifest/resource path
 
 ```yaml
-uses: namgaytobden/k8s-manifestation@main
+uses: namgaytobden/k8s-Manifestation-Beta@main
 with:
   image: docker_repo:tag
   manifest_path: deployment/manifest/
